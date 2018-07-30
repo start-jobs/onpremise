@@ -28,6 +28,8 @@ x-defaults: &defaults
     SENTRY_DB_PASSWORD: S3ntr1234
     SENTRY_EMAIL_HOST: smtp
     SENTRY_SERVER_EMAIL: 'raul@localstaffingllc.com'
+    GMAIL_USER: 'sender@localstaffingllc.com'
+    GMAIL_PASSWORD: '223L@cal'
   volumes:
     - sentry-data:/var/lib/sentry/files
 
