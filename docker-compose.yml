@@ -20,11 +20,14 @@ x-defaults: &defaults
   environment:
     # Run `docker-compose run web config generate-secret-key`
     # to get the SENTRY_SECRET_KEY value.
-    SENTRY_SECRET_KEY: ''
+    SENTRY_SECRET_KEY: '_a(1p=^qibw_)4z*++0j3eey_oqon#!g34@3ca86vw0dzn@z-!'
     SENTRY_MEMCACHED_HOST: memcached
     SENTRY_REDIS_HOST: redis
-    SENTRY_POSTGRES_HOST: postgres
+    SENTRY_POSTGRES_HOST: sentry.chhhrwmiwg0d.us-east-1.rds.amazonaws.com
+    SENTRY_DB_USER: root
+    SENTRY_DB_PASSWORD: S3ntr1234
     SENTRY_EMAIL_HOST: smtp
+    SENTRY_SERVER_EMAIL: 'raul@localstaffingllc.com'
   volumes:
     - sentry-data:/var/lib/sentry/files
 
